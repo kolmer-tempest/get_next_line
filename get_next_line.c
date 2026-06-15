@@ -6,8 +6,16 @@
 /*   By: bpires-k <bpires-k@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/09 21:42:46 by bpires-k          #+#    #+#             */
-/*   Updated: 2026/06/09 21:42:50 by bpires-k         ###   ########.fr       */
+/*   Updated: 2026/06/14 12:06:45 by bpires-k         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
+char	*get_next_line(int fd)
+{
+	char	*buffer;
+	size_t	sline;
+	int	pos;
+	
+	pos = 0;
+	sline = line_len(fd, pos);
+}

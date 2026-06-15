@@ -6,8 +6,10 @@
 /*   By: bpires-k <bpires-k@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/09 21:43:38 by bpires-k          #+#    #+#             */
-/*   Updated: 2026/06/09 21:43:40 by bpires-k         ###   ########.fr       */
+/*   Updated: 2026/06/14 12:28:30 by bpires-k         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
+size_t	line_len(int fd, int pos)
+{
+	while (fd[pos] != '\n' || fd[pos] != -1)
