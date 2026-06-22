@@ -16,16 +16,12 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-typedef struct s_list
-{
-	char			*buf_str;
-	struct s_list	*next;
-}			t_list;
-
 char	*get_next_line(int fd);
-char	*save_line(int fd, t_list *str);
+char	*save_line(int fd, char *full_line);
 char	*ft_strchr(const char *s, int c);
-t_list	*ft_lstnew(void *content);
-
+char	*ft_strjoin(char const *s1, char const *s2);
+size_t	ft_strlen(const char *str);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strdup(const char *s);
 
 #endif
