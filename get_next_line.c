@@ -42,7 +42,7 @@ char	*get_next_line(int fd)
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
 	fline = save_line(fd, fline);
-	if (!fline)
+	if (!fline || *fline == '\0')
 		return (free(fline), fline = NULL, NULL);
 	if (ft_strchr(fline, '\n'))
 		nline = ft_substr(fline, 0, ft_strchr(fline, '\n') - fline + 1);
